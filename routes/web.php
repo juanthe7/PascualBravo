@@ -20,3 +20,11 @@ Route::get('user/{username?}', function ($name = null) {
 });*/
 
 Route::get('user/{id}', 'userController@show');
+
+/*Route::get('/', function () {
+    return view('users', ['name' => 'Jose']);
+    //return view('users')with('name','Ignacio');
+
+});*/
+
+Route::get('/', 'UserController@saluda');
