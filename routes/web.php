@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+/*creacion de rutas personlizadas
+Route::get('user/{username?}', function ($name = null) {
+    return 'Bienvenido:' . $name;
+});*/
+
+Route::get('user/{id}', 'userController@show');
